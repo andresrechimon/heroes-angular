@@ -1,0 +1,11 @@
+<div style="border-width:2px;border-style:solid;border-color: gainsboro;padding: 5px;" class="animated fadeIn fast">
+    <img class="card-img-top img-fluid" [src]="heroe.img" alt="Card image cap">
+    <div class="card-block">
+    <h5 class="card-title">{{heroe.nombre}}</h5>
+    <p class="card-text">{{heroe.bio}}</p>
+    <p class="card-text"><small class="text-muted">{{heroe.aparicion}}</small></p>
+    <!-- NAV. X LINK -->
+    <a [routerLink]="[ '/heroe', i ]">Ver más</a>
+    <!-- NAV. X BOTÓN -->
+    <button (click)="verHeroe()" type="button" class="btn btn-outline-primary col-12">Ver más...</button>
+</div>
